@@ -11,6 +11,19 @@
     <!-- The main body -->
        
     <body>
+    <!-- Adding a div element with an id attribute styled in the external css file -->
+	<div id="navigation">
+		<!-- Navigation links leading to pages in the directory of the folder -->
+		<ul>
+			<li><a href="../../index.html">About me</a></li>
+            <li><a href="content/tables/timetable.html">My College Timetable</a></li>
+			<li><a href="content/tables/list.html">My table List</a></li>
+			<li><a class="active" href="#">My forms</a></li>
+            <li><a href="content/pages/about.html">My portfolio</a></li>
+			<li><a href="content/pages/contact.html">My contacts</a></li>
+		</ul>
+		<!-- End of navigation block -->
+	</div>
         <!-- Form element opening tag -->
         <form>
         <!-- Heading -->
@@ -28,16 +41,23 @@
             </label>
             <!-- Line break -->
             <br />
-            <label>Password:
+            <label>Your password:
                 <br />
-                <input type="password" name="password" maxlength="10" />
+                <input type="password" name="password" maxlength="15" />
             </label>
             <!-- Line break -->
             <br />
-            <label>About you:
+            <label>About your hobby:
                 <br />
-                <textarea name="about" rows="4" cols="50">Enter something about you...</textarea>
+                <textarea name="hobby" rows="2" cols="50">Enter something about your hobby...</textarea>
             </label>
+            <!--line break-->
+            <br />
+            <label>About your family:
+                <br />
+                <textarea name="family" rows="3" cols="25">Enter something about your family...</textarea>
+            </label>
+            
             <!-- End of grouped elements -->
             </fieldset>
             
@@ -56,6 +76,16 @@
                 <input type="radio" name="hair_color" value="other" />Other
             </p>
             <p>
+                <b>Please select your favorite writers:</b>
+                <br />
+                <p><input type="radio" name="writers" value="Ernest Hemingway" checked="checked"/>Ernest Hemingway</p>
+                 <p><input type="radio" name="writers" value="Stephen King" />Stephen King</p>
+                 <p><input type="radio" name="writers" value="Jack London" />Jack London</p>
+                 <p><input type="radio" name="writers" value="Mark Twain"/>Mark Twain</p>
+                 <p><input type="radio" name="writers" value="W. Somerset"/> MaughamW. Somerset Maugham</p>
+                 <p><input type="radio" name="writers" value="James Joyce"/> James Joyce</p>
+                  <p><input type="radio" name="writers" value="Vladimir Nabokov"/> Vladimir Nabokov</p>
+            <p>
                 <b>Please select your favorite music genre:</b>
                 <!-- Line Break -->
                 <br />
@@ -69,6 +99,22 @@
                 <input type="checkbox" name="genre" value="other" />Other
                 
             </p>
+
+            <p>
+            <b>Please select your favorite film director</b>
+            <br />
+           <p><input type="checkbox" name="director" value="David Lynch" />David Lynch</p>
+            <p><input type="checkbox" name="director" value="Stanley Kubrick" />Stanley Kubrick </p>
+            <p><input type="checkbox" name="director" value="Alfred Hitchcock" /> Alfred Hitchcock</p>
+            <p><input type="checkbox" name="director" value=" Martin Charles Scorsese" /> Martin Charles Scorsese</p>
+            <p><input type="checkbox" name="director" value="Francis Ford Coppola" /> Francis Ford Coppola</p>
+            <p><input type="checkbox" name="director" value="Ingmar Bergman" /> Ingmar Bergman </p>
+            <p><input type="checkbox" name="director" value="Jean-Luc Godard" /> Jean-Luc Godard</p>
+
+            </p>
+
+
+
             <p>
                 <b>What device do you use daily?</b>
                 <!-- Line Break -->
@@ -84,6 +130,42 @@
                 <!-- End of <select> element -->
                 </select>
             </p>
+
+            <p>
+            <b>How do you prefer to spend your free time</b>
+            <br />
+            <select name="free_time">
+            <option value="exercis"> Physical exercis</option>
+            <option value="reading">  Reading </option>
+            <option value="education"> Education </option>
+            <option value="volunteering"> Volunteering</option>
+            <option value="networking"> Socialnetworking </option>
+            <option value="hobbies"> Hobbies</option>
+            <option value="ff"> With Friends and Family</option>
+           
+            </p>
+
+            <p>
+                <b>Please select magic power you would like to have?</b>
+                   <br />
+                    ( Hold CTRL to select multiple ) 
+                    <br />
+                
+                <select name="power" size="9" multiple="multiline">
+                    <!-- All the options for this element -->
+                    <option value="shapeshifting" selected="selected">Shapeshifting</option>
+                    <option value="speedster">Speedster (fiction)</option>
+                    <option value="invulnerability">Invulnerability</option>
+                    <option value="superintelligence">Superintelligence</option>
+                    <option value="teleportation">Teleportation in fiction</option>
+                    <option value="travel">Time travel in fiction</option>
+                    <option value="flight">Flight</option>
+                    <option value="immortality">Immortality in fiction</option>
+                    <option value="invisibility">Invisibility in fiction"></option>
+
+                </select>
+            </p>
+
             <p>
                 <b>Please select all the skills applicable to you?</b>
                 <!-- Line Break -->

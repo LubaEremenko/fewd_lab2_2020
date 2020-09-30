@@ -4,14 +4,16 @@
     <head>
         <title>Tables</title>
         <!-- CSS code, only in this example we use to show the timetable clearly otherwise we use an external CSS file -->
+        <!-- Using external CSS -->
+	        <link href="../../css/styles.css" type="text/css" rel="stylesheet" /> 
         <style>
             /* Add a black border to table, headings and data */
             table, th, td {
-                border: 1px solid black;
+                border: 5px solid black;
             }
-            /* Add a pink background colour to table data */
+            /* Add a blue background colour to table data */
             td {
-                 background-color: #ffc0cb;
+                 background-color: #0f67bf;
             }
         /* End of CSS */
         </style>
@@ -19,12 +21,30 @@
     </head>
     <!-- The main body -->
     <body>
+
+    <!-- Adding a div element with an id attribute styled in the external css file -->
+	<div id="navigation">
+		<!-- Navigation links leading to pages in the directory of the folder -->
+		<ul>
+			<li><a href="index.html">About me</a></li>
+            <li><a class="active" href="#">My College Timetable</a></li>
+			<li><a href="content/tables/list.html">My table List</a></li>
+			<li><a href="content/forms/forms.html">My forms</a></li>
+            <li><a href="content/pages/about.html">My portfolio</a></li>
+			<li><a href="content/pages/contact.html">My contacts</a></li>
+		</ul>
+		<!-- End of navigation block -->
+	</div>
         <!-- Start the table element -->
         <table>
                 <!-- First table row -->
                 <tr>
                     <!-- Span 8 headings -->
                     <th>TIMETABLE</th>
+                    <th>9am</th>
+                    <th>10am</th>
+                    <th>11am</th>
+                    <th>12am</th>
                     <th>1pm</th>
                     <th>2pm</th>
                     <th>3pm</th>
@@ -32,6 +52,7 @@
                     <th>5pm</th>
                     <th>6pm</th>
                     <th>7pm</th>
+                    <th>8pm</th>
                 </tr>
                 <!-- First Table Row -->
                 <tr>
@@ -65,6 +86,16 @@
                     <th>Thursday</th>
                     <!-- 5 Column span since the other 2 are Game Dev -->
                     <td colspan="5"></td>
+                </tr>
+                 <!-- 5 Table Row -->
+                <tr>
+                    <th>Friday</th>
+                    <!-- 1 column -->
+                    <td>Hobby</td>
+                    <!-- 4 Column Span-->
+                    <td colspan="4">Walking</td>
+                    <!-- 2 Column Span and 2 row span! -->
+                    <td rowspan="2" colspan="2">Shopping</td>
                 </tr>
         <!-- End of table -->
         </table>

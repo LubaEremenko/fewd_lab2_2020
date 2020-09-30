@@ -4,13 +4,15 @@
     <head>
         <title>Tables Continued</title>
         <!-- CSS code, only in this example we use to show the table list clearly otherwise we use an external CSS file -->
+        <!-- Using external CSS -->
+	        <link href="../../css/styles.css" type="text/css" rel="stylesheet" />
          <style>
              /* Set the colour of the table data and headings */
             td {
-                 background-color: #ffe5ea;
+                 background-color: #367d4a;
             }
              th{
-                 background-color: #ffc0cb;
+                 background-color: #09541e;
              }
         /* End of CSS */
         </style>
@@ -18,16 +20,33 @@
     </head>
     <!-- The main body -->
     <body>
+<!-- Adding a div element with an id attribute styled in the external css file -->
+	<div id="navigation">
+		<!-- Navigation links leading to pages in the directory of the folder -->
+		<ul>
+			<li><a href="index.html">About me</a></li>
+            <li><a href="content/tables/timetable.html">My College Timetable</a></li>
+			<li><a class="active" href="#">My table List</a></li>
+			<li><a href="content/forms/forms.html">My forms</a></li>
+            <li><a href="content/pages/about.html">My portfolio</a></li>
+			<li><a href="content/pages/contact.html">My contacts</a></li>
+		</ul>
+		<!-- End of navigation block -->
+	</div>
+
         <!-- Start the table element -->
         <table>
             <!-- Table head -->
             <thead>
                 <!-- First table row -->
                 <tr>
-                    <!-- Span 3 table headings -->
+                    <!-- Span 6 table headings -->
                     <th>Date</th>
                     <th>Students</th>
                     <th>Absent</th>
+                    <th>Task</th>
+                    <th>Grade</th>
+                    <th>Result</th>
                 </tr>
             </thead>
             <!-- Table Body -->
@@ -37,60 +56,99 @@
                     <th>29th October</th>
                     <td>29</td>
                     <td>1</td>
+                    <td>Html coding</td>
+                    <td>AAA</td>
+                    <td>Done</td>
                 </tr>
                 <!-- Third Table Row -->
                 <tr>
                     <th>30th October</th>
                     <td>26</td>
                     <td>4</td>
+                    <td>OOP</td>
+                    <td>CCC</td>
+                    <td>Continued</td>
                 </tr>
                 <!-- Fourth Table Row -->
                 <tr>
                     <th>31st October</th>
                     <td>4</td>
                     <td>26</td>
+                    <td>OOP</td>
+                    <td>CCC</td>
+                    <td>Continued</td>
                 </tr>
                 <!-- Fifth Table Row -->
                 <tr>
                     <th>1st November</th>
                     <td>25</td>
                     <td>5</td>
+                    <td>OOP</td>
+                    <td>CCC</td>
+                    <td>Continued</td>
                 </tr>
                 <!-- Sixth Table Row -->
                 <tr>
                     <th>2nd November</th>
                     <td>28</td>
                     <td>2</td>
+                    <td>OOP</td>
+                    <td>CCC</td>
+                    <td>Continued</td>
                 </tr>
                 <!-- Seventh Table Row -->
                 <tr>
                     <th>3rd November</th>
                     <td>26</td>
                     <td>4</td>
+                    <td>Html coding</td>
+                    <td>AAA</td>
+                    <td>Done</td>
                 </tr>
                 <!-- Eighth Table Row -->
                  <tr>
                     <th>4th November</th>
                     <td>22</td>
                     <td>8</td>
+                    <td>Html coding</td>
+                    <td>AAA</td>
+                    <td>Done</td>
                 </tr>
                 <!-- Nineth Table Row -->
                  <tr>
                     <th>5th November</th>
                     <td>21</td>
                     <td>9</td>
+                    <td>Html coding</td>
+                    <td>AAA</td>
+                    <td>Done</td>
                 </tr>
                 <!-- Tenth Table Row -->
                  <tr>
                     <th>6th November</th>
                     <td>28</td>
                     <td>2</td>
+                    <td>Html coding</td>
+                    <td>AAA</td>
+                    <td>Done</td>
                 </tr>
                 <!-- Eleventh Table Row -->
                  <tr>
                     <th>7th November</th>
                     <td>30</td>
                     <td>0</td>
+                    <td>Html coding</td>
+                    <td>AAA</td>
+                    <td>Done</td>
+                </tr>
+                 <!-- Twelve Table Row -->
+                 <tr>
+                    <th>SSSSSS</th>
+                    <td>DDD</td>
+                    <td>dfs</td>
+                    <td>sdfsdfsdfsf</td>
+                    <td>AAA</td>
+                    <td>Done</td>
                 </tr>
             <!-- End of table body -->
             </tbody>
@@ -100,8 +158,8 @@
                     <!-- Empty Heading -->
                     <th></th>
                     <!-- Last two headings -->
-                    <td>239</td>
-                    <td>61</td>
+                    <td>400</td>
+                    <td>200</td>
                 </tr>
             <!-- End of table footer -->
             </tfoot>
