@@ -13,14 +13,15 @@ body {
     /* overflow is clipped and elements cant overflow */
     overflow: hidden;
     /* colour of the background */
-    background-color: #5f84ce;
+    background-color:#277520 ;
     /* position is always in place */
     position: fixed;
     top: 0;
     /* takes 100% of the browser's page */
     width: 100%;
     /* adds a border */
-    border-bottom: 5px solid #4c6aa5;
+    border-bottom: 5px solid #39AC2F;
+
 }
 
 /* Target all of the <li> elements in the navigation div */
@@ -28,7 +29,7 @@ body {
     /* position all of the li elements to the left */
     float: left;
     /* add a bottom border with a solid hex colour */
-    border-right: 1px solid #4c6aa5;
+    border-right: 2px solid #174713 ;
 }
 
 /* Target all the <a> elements in the <li> in the navigation div */
@@ -36,7 +37,7 @@ body {
     /* Display this as a block */
     display: block;
     /* All text is white */
-    color: white;
+    color: #D4F2D1;
     /* align the text to be in the center */
     text-align: center;
     /* add some white space around */
@@ -68,6 +69,11 @@ body {
 #site_image {
     width: 100%;
 }
+
+#navigation a.active{
+    background-color:  #22631C;
+}
+
 
 /* Main text div */
 #main{
