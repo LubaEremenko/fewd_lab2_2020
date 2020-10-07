@@ -62,6 +62,13 @@ body {
     padding: 5px;
 }
 
+#app_image {
+    width: 100%;
+}
+#site_image {
+    width: 100%;
+}
+
 /* Main text div */
 #main{
     /* Change the size to be automatic which is reflected on the block before it (image) */
